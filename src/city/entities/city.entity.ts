@@ -12,6 +12,7 @@ export class CityEntity {
     stateId: number;
 
     @Column({ name: 'name', nullable: false })
+    name: string;
 
     @CreateDateColumn()
     createdAt: Date;

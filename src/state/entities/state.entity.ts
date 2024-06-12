@@ -8,6 +8,7 @@ export class StateEntity {
     id: number;
 
     @Column({ name: 'name', nullable: false })
+    name: string;
 
     @CreateDateColumn()
     createdAt: Date;
