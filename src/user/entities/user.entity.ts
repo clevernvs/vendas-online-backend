@@ -32,10 +32,10 @@ export class UserEntity {
   type_user: number;
 
   @CreateDateColumn()
-  createdAt: Date;
+  created_at: Date;
 
   @UpdateDateColumn()
-  updatedAt: Date;
+  updated_at: Date;
 
   @OneToMany(() => AddressEntity, (address) => address.user)
   addresses?: AddressEntity[];

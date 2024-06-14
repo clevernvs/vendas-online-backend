@@ -12,6 +12,7 @@ import { APP_GUARD } from '@nestjs/core';
 import { RoleGuard } from './guards/roles.guard';
 import { HealthModule } from './health/health.module';
 import { JwtModule } from '@nestjs/jwt';
+import { User2Service } from './user2/user2.service';
 
 @Module({
   imports: [
@@ -39,6 +40,7 @@ import { JwtModule } from '@nestjs/jwt';
       provide: APP_GUARD,
       useClass: RoleGuard,
     },
+    User2Service,
   ],
 })
 export class AppModule {}
